@@ -24,7 +24,7 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var myMapView: MKMapView!
     
     let PVAMUCenter = CLLocationCoordinate2D(latitude: 30.092540, longitude: -95.990437) ////administration building
-    let PVAMURegion = MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D(latitude: 30.092540, longitude: -95.990437), 1300, 1300)
+    let PVAMURegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 30.092540, longitude: -95.990437), latitudinalMeters: 1300, longitudinalMeters: 1300)
     var pvuAnnotations: [buildingAnnotation] = []  //Holds all the annotations for the PVAMU campus
     
     
